@@ -50,6 +50,14 @@ export default function ArchiveView() {
           gone. If you didn&apos;t listen, that&apos;s okay. Tomorrow there will be three more.
         </p>
       </div>
+
+      <button
+        onClick={() => { localStorage.clear(); window.location.reload() }}
+        className="mt-12 font-mono text-xs underline"
+        style={{ color: 'rgba(26,23,20,0.3)' }}
+      >
+        reset onboarding
+      </button>
     </div>
   )
 }
