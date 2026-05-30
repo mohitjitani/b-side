@@ -1,0 +1,27 @@
+import { Space_Grotesk, Space_Mono } from 'next/font/google'
+import './globals.css'
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-space-grotesk',
+})
+
+const spaceMono = Space_Mono({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-space-mono',
+})
+
+export const metadata = {
+  title: 'Otis',
+  description: 'Your music discovery companion',
+}
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en" className={`${spaceGrotesk.variable} ${spaceMono.variable}`}>
+      <body>{children}</body>
+    </html>
+  )
+}
