@@ -241,6 +241,10 @@ export default function TodayView() {
         <p className="font-mono text-xs mt-3 tracking-widest" style={{ color: 'rgba(26,23,20,0.45)' }}>
           {getDateLine()}
         </p>
+
+        <p className="font-mono mt-2" style={{ fontSize: 10, color: 'rgba(26,23,20,0.32)', letterSpacing: '0.03em' }}>
+          ↳ 1,240 tracks · 38 sources
+        </p>
       </div>
 
       {/* Pick cards */}
